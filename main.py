@@ -219,7 +219,7 @@ async def on_message(message):
           shelf_file['min'] = min
           print("With×MEETSの配信日時データを更新しました。")
       elif re.search(
-          r'(?m)(?s)^(?=.*開催決定)(?=.*([1-9]|1[0-2])月度Fes×LIVE)(?=.*場所:Link！Like！ラブライブ！).*$',
+          r'(?m)(?s)^(?=.*開催決定)(?=.*([1-9]|1[0-2])月度Fes×LIVE)(?=.*Link！Like！ラブライブ！).*$',
           last_msg_desc):
         day = re.search(r'(?m)([1-9]|1[0-2])/([1-9]|[12][0-9]|3[01])\(',
                         last_msg_desc).group().replace('(', '')
