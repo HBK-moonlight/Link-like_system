@@ -1,27 +1,19 @@
----
-title: Discord Python bot
-description: A Discord bot written in Python
-tags:
-  - python
-  - discord.py
----
 
-# Discord.py Example
+# スクコネ配信通知bot
 
-This example starts a Discord bot using [discord.py](https://discordpy.readthedocs.io/en/stable/).
+リリース未定
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/PxM3nl)
+## ✨ 実装済み機能
 
-## ✨ Features
+- キャラ名(フルネーム)が入力された時、入力したキャラのプロフィールを送信
+- "質問！"から始まるメッセージが入力された時、コールを送信
+- アプリ内お知らせが更新された時にチャンネルに送信 (稀に過去のお知らせを全て送信することがある)
+- スクコネでの配信が開始(待機所開場)された時にユーザーに通知
 
-- Python
-- Discord.py
+## 💁‍♀️ 使い方
 
-## 💁‍♀️ How to use
+- 
 
-- Install packages using `pip install -r requirements.txt`
-- Start the bot using `python main.py`
+## 📝 備考
 
-## 📝 Notes
-
-This is a basic bot with the prefix `!`, more information can be founded at their [offical documentation](https://discordpy.readthedocs.io/en/stable/api.html).
+自分の鯖のみでの運用を想定、そのため他の鯖では機能しません
