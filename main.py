@@ -116,10 +116,10 @@ async def on_ready():
     last_msg = await channel2.fetch_message(id)
     last_msg_desc = last_msg.embeds[0].description
     if re.search(
-        r'(?m)(?s)^(?=.*開催決定)(?=.*([1-9]|1[0-2])月度Fes×LIVE)(?=.*Link！Like！ラブライブ！).*$',
+        r'(?m)(?s)^(?=.*開催決定)(?=.*([1-9]|1[0-2])月度Fes×LIVE)(?=.*場所.Link！Like！ラブライブ！).*$',
         last_msg_desc):
       day = re.search(r'(?m)([1-9]|1[0-2])/([1-9]|[12][0-9]|3[01])\(',
-                      last_msg_desc).group().replace('(', '')
+            last_msg_desc).group().replace('(', '')
       hhmm = re.search(r'(?m)([0-9]|1[0-9]|2[0-3]):[0-5][0-9]', last_msg_desc)
       hour = re.search(r'(?m)([0-9]|1[0-9]|2[0-3]):',
                        str(hhmm)).group().replace(':', '')
