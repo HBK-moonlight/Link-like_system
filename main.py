@@ -133,16 +133,16 @@ async def on_ready():
     day = shelf_file['day']
     hour = shelf_file['hour']
     min = shelf_file['min']
-    print(day)
-    print(hour)
-    print(min)
+    print("WM_day:%s" % day)
+    print("WM_hour:%s" % hour)
+    print("WM_min:%s" % min)
   with shelve.open('next_fl_time') as shelf_file:
     day = shelf_file['day']
     hour = shelf_file['hour']
     min = shelf_file['min']
-    print(day)
-    print(hour)
-    print(min)
+    print("FL_day:%s" % day)
+    print("FL_hour:%s" % hour)
+    print("FL_min:%s" % min)
   loop1.start()
   notice_wm.start()
   notice_fl.start()
