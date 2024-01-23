@@ -86,8 +86,8 @@ async def on_ready():
       print('更新なし')
 
   channel2 = client.get_channel(1180364912002863164)
-  messages = [str(message) async for message in channel2.history(limit=100)]
-  text_filter = [s for s in messages if r'蓮ノ空公式X' in s]
+  messages = [str(message) async for message in channel2.history(limit=25)]
+  text_filter = [s for s in messages]
   id_dic = []
   for text in text_filter:
     id_dic.append(text[:text.find(' c') + len(' c')])
