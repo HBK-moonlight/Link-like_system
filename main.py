@@ -87,7 +87,7 @@ async def on_ready():
 
   channel2 = client.get_channel(1180364912002863164)
   messages = [str(message) async for message in channel2.history(limit=100)]
-  text_filter = [s for s in messages if r'ComebackTwitterEmbed' in s]
+  text_filter = [s for s in messages if r'蓮ノ空公式X' in s]
   id_dic = []
   for text in text_filter:
     id_dic.append(text[:text.find(' c') + len(' c')])
@@ -215,7 +215,7 @@ async def loop1():
 @client.event
 async def on_message(message):
   global sc_channel
-  if (str(message.author) == 'ComebackTwitterEmbed#3134'):
+  if (str(message.author) == '蓮ノ空公式X'):
     if (message.channel.id == int(sc_channel)):
       last_msg_desc = message.embeds[0].description
       if re.search(
