@@ -215,7 +215,7 @@ async def loop1():
 @client.event
 async def on_message(message):
   global sc_channel
-  if (str(message.author) == '蓮ノ空公式X'):
+  if (str(message.author.id) == '1180377638766907463'):
     if (message.channel.id == int(sc_channel)):
       last_msg_desc = message.embeds[0].description
       if re.search(
