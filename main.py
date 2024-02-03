@@ -131,9 +131,9 @@ async def on_ready():
         shelf_file['day'] = day
         shelf_file['hour'] = hour
         shelf_file['min'] = min
-        print('WM_day:%s' % shelf_file['day'])
-        print('WM_hour:%s' % shelf_file['hour'])
-        print('WM_min:%s' % shelf_file['min'])
+        print('FL_day:%s' % shelf_file['day'])
+        print('FL_hour:%s' % shelf_file['hour'])
+        print('FL_min:%s' % shelf_file['min'])
       break
   loop1.start()
   notice_wm.start()
