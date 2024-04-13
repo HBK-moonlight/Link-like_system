@@ -247,6 +247,9 @@ async def on_message(message):
         '夕霧綴理': '04',
         '大沢瑠璃乃': '05',
         '藤島慈': '06',
+        '百生吟子': '07',
+        '徒町小鈴': '08',
+        '安養寺姫芽': '09'
     }
     mes = message.content
     if mes in member_number:
@@ -264,6 +267,9 @@ async def on_message(message):
           '04': 0xba2636,
           '05': 0xe7609e,
           '06': 0xc8c2c6,
+          '07': 0xa2d7dd,
+          '08': 0xfad764,
+          '09': 0x9d8de2,
       }
       col = member_color[num]
       grade = soup.select(
